@@ -1,0 +1,312 @@
+.navbar {
+    position: fixed;          /* membuat navbar berada di atas hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    height: 70px;
+
+    background: rgba(255, 255, 255, 0.7); /* putih transparan */
+    backdrop-filter: blur(1px); /* efek kaca */
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+}
+.logo {
+   height: 60px;
+}
+/* Menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #e64339;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 119vh;
+    background-image: url('bromo.webp'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Bagian tulisan */
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+/* Tulisan "Indonesia" */
+.hero-content h1 {
+    font-size: 80px;
+    font-weight: 600;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 10px;
+}
+
+/* Sub text kecil */
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Tombol Explore Now */
+.btn-explore {
+    background-color: #35c1a8;
+    padding: 12px 28px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-explore:hover {
+    background-color: #279682;
+}
+/*bagian web 2*/
+.text h1 {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Brush Script MT', cursive;
+    margin-left: 350px;
+    margin-top: 90px;
+    color:white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #eaeaea;
+  padding: 40px;
+}
+
+/*bagian card*/
+.card-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px); /*bergerak ke atas*/
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+  font-size: 20px;
+  color: #6a00ff;
+}
+
+.card p {
+  padding: 0 15px 15px;
+  color: #555;
+  font-size: 14px;
+}
+
+.card .btn {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 15px;
+  background: #00b894;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.card .btn:hover {
+  background: #009670;
+}
+/*bagian scrool*/
+.scrool-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  margin-top: 100px;
+  background: rgb(255, 255,255,0.688);
+    padding: 30px;
+    background: rgb(75, 54, 33);
+    border-radius: 20px;  
+}
+
+.item {
+  min-width: 220px;
+  height: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #ddd;
+  
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia';
+    background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('bandung.jpg') center/cover no-repeat;
+  filter: blur(4px);      /* background yang blur */
+  z-index: -1;           
+}
+
+.menu-container {
+    align-items: center;    /* biar sejajar secara vertikal */
+    gap: 15px;   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+
+}
+/*bagian halaman 3*/
+.card1 {
+    width: 300px;
+    background: rgba(239, 230, 225, 0.8);
+    padding: 20px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.card2 {
+    width: 300px;
+    background: rgba(239, 230, 225, 0.8);
+    padding: 20px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.maps1 {
+  margin-left: 300px;
+  margin-top: -90px;
+}
+/*bagian halaman 5*/
+.food-img {
+    width: 220px;
+    height: 160px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid white;
+}
+
+.title {
+    font-size: 28px;
+    font-family: "Brush Script MT", cursive;
+    margin: 0;
+    color: black;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+    color: #b88019;
+}
+
+.desc {
+    font-size: 14px;
+    line-height: 1.4;
+    color: black;
+}
+h4 {
+  margin-top: -50px;
+  margin-left: 7px;
+  font-family: serif;
+  color: rgb(255, 255, 255);
+  z-index: -1;  
+}
+p1 {
+  font-size: 10px;
+  padding-left: 4px;
+  margin-right: 10px;
+  color: white;
+}
+footer {
+  background: #f4f4f4;
+  color: #000000;
+  padding: 60px 0;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+}
+.footer-col h3 {
+  color: #8b6161;
+  margin-bottom: 15px;
+}
+.no-line {
+    text-decoration: none;
+    color: black;
+}
